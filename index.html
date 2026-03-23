@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decsim - Герой нулей и единиц</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/tag-styles.css">
+        <link rel="stylesheet" href="styles/bootstrap.css">
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                    <a href="#main"><h3>Главная</h3></a>
+                    <a href="#heroSection"><h3>О герое</h3></a>
+                    <a href="#heroWorldSection"><h3>О мире</h3></a>
+                    <a href="story.html"><h3>История</h3></a>
+                    <a href="#"><h3>Интерактивчик</h3></a>
+            </header>
+            <main> 
+                <div style="text-align: center;">
+                    <div style="display: inline-block;">
+                        <h1 class="h1-6 typing" style="--time:2.5s">Наш герой — Decsim</h1>
+                    </div>
+                    <p>Герой нулей и единиц</p>
+                </div>
+
+                <div class="container" id="main">
+                    <div class="text-container">
+                        <h2>Наш герой</h2> 
+                        <p>Прежде чем погрузиться в лор нам нужно познакомиться с нашим героем. 
+                            Даже если он выглядит не очень интересно, он обладает уникальными способностями, 
+                            которые сделают его незаменимым в борьбе за будущее человечества.</p>
+                        <br>
+                        <button class="btn" id="learn-more-btn-hero" style="width: 40%;">Узнать больше</button>
+                    </div>
+                    <img src="images/Hero1.png"  alt="hero" class="model-img" width="20%">
+                </div>
+                <br><br>
+                <div id="heroSection">
+                    <div style="display: flex;flex-direction: column;align-items: flex-start;gap: 5px;margin: auto 0;width: 80%;">
+                        <h2>О герое</h2>
+                        <p>Вот и наш герой, сейчас вы познакомимся с ним подробнее.</p>
+                        <br>
+                        <h3>Описание</h3>
+                        <p>Интеллектуал-одиночка с феноменальной памятью и сложной внутренней архитектурой. 
+                            Человек, который научился контролировать свой гнев раньше, чем начал доверять людям. 
+                            Его принципиальность — это не каприз, а фундамент, на котором он строит свою жизнь в мире, 
+                            который кажется ему неизбежно временным.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <p>А сейчас узнаем насколько вы похожи на него</p>
+                        <br>
+                        <button class="btn" id="similarity-test-btn">Пройти тест</button>
+                    </div>
+                    <img src="images/HeroNoBgInAChair.png"  alt="hero" class="model-img2" width="20%">
+                </div>
+                <br><hr class="hr2"><br>
+                <div id="heroWorldSection">
+                    <h2>Мир, в котором живет Decsim</h2>
+                    <p style="line-height: 2;">Decsim живет в мире, который сильно отличается от нашего. 
+                        Это мир, где технологии везде и повсюду, если мы живем с технологиями, то они живут в них. 
+                        В этом мире граница между реальностью и цифровой иллюзией давно стерта.
+                        Человечество достигло технологии переноса сознания в искусственную среду. 
+                        Изначально это задумывалось как шаг к бессмертию, способ сохранить разум и пережить физические ограничения тела. 
+                        Но технология оказалась в руках тех, кто увидел в ней не спасение, а источник власти.
+                        Людей начали насильно переносить в цифровые симуляции — идеальные, но фальшивые миры, где сознание застревает, 
+                        не подозревая о своей истинной судьбе. Их физические тела остаются в реальности, заключенные в капсулы, подключенные 
+                        к системам, извлекающим жизненную энергию. Эта энергия используется для продления жизни и усиления влияния тех, кто контролирует систему.
+                        Сама симуляция нестабильна. Она трескается, искажается, подчиняется ошибкам. Города распадаются на фрагменты кода, 
+                        пространство ведёт себя нелогично, а законы реальности нарушаются. Иногда сквозь эти сбои можно увидеть правду — 
+                        холодную инфраструктуру, скрытую за иллюзией.
+                        Мир наполняют цифровые артефакты: зависшие в воздухе символы, потоки данных, искажения пространства. 
+                        Внутри симуляции можно заметить силуэты людей, запертых в прозрачных структурах, словно в клетках из света и информации.
+                        Это не просто виртуальная среда. Это тюрьма, замаскированная под реальность.
+                        Те, кто понимает, что происходит, называют это системой обмана — местом, где сознание живёт, но не принадлежит себе.
+                        И чем глубже человек погружается в этот мир, тем сложнее отличить правду от иллюзии.
+                        </p>
+                </div>
+                <br><br>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/world1.png" class="d-block w-100" alt="World image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/world2.png" class="d-block w-100" alt="World image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/world3.png" class="d-block w-100" alt="World image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/world4.png" class="d-block w-100" alt="World image 4">
+                        </div>
+                    </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <br><hr class="hr2"><br>
+                <div id="story">
+                    <h2>История</h2>
+                    <p>Ну а теперь история, как же я докатился до жизни такой...</p>
+                    <a href="story.html"><button>Давайте начнем</button></a>
+                </div>
+            </main>
+        </div>
+    </body>
+    <div class="similarity-modal-window" id="similarity-modal-window">
+        <button class="btn-x-close" id="close-similarity-modal-btn">⨉</button>
+        <!--Вопросы-->
+        <div id="question-container">
+            <h2 id="question-text">Загрузка вопроса...</h2>
+            <br>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn answer-btn" id="answer-btn-1">Ответ 1</button>
+                <button class="btn answer-btn" id="answer-btn-2">Ответ 2</button>
+                <button class="btn answer-btn" id="answer-btn-3">Ответ 3</button>
+            </div>
+        </div>
+        <!--Результат-->
+        <div id="result-container" style="display: none;">
+            <h2>Ваш результат:</h2>
+            <p id="result-score"></p>
+            <br>
+            <p id="result-message"></p>
+        </div>
+        <div id="start-container">
+            <h2>Тест</h2>
+            <hr>
+            <p>Сейчас тут будут вопросы и варианты ответов, после его прохождения мы посмотрим, насколько вы похожи на нашего героя</p>
+            <br>
+            <button class="btn" id="start-similarity-modal-btn">Начать тест</button>
+        </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</html>
