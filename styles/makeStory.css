@@ -1,0 +1,55 @@
+
+:root{
+    --white: #FFFFFF;
+
+    --danger: rgb(255,69,0);
+
+    --amber: #FFB000;
+    --lt_amb: #FFCC00;
+
+    --green1 : #33FF00;
+    --apple1: #33FF33;
+    --green2: #00FF33;
+
+    --apple_llc: #66FF66;
+    --green3: #00FF66;
+
+    --header-height: 80px;
+}/*https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays
+   <--- Источник цветов*/
+
+
+#game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    color: var(--green3); 
+    border: 2px solid var(--apple_llc);
+    font-family: sans-serif;
+}
+
+.story-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: transparent;
+    color: var(--lt_amb); 
+    border: 1px solid var(--lt_amb);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.story-btn:hover {
+    background: var(--lt_amb);
+    color: #000000;
+}
+
+#story{
+    margin: 5% auto;
+}
+
+#mainstory{
+    background:none;
+}

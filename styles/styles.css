@@ -144,7 +144,11 @@
 
 
 
-
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* Модальное окно*/
 .similarity-modal-window {
@@ -211,3 +215,41 @@
         width: 40%;
     }
 }
+
+
+@media (max-width: 600px) {
+    .similarity-modal-window{
+        width: 90%;
+    }
+    .footer-text{
+        text-align: center;
+    }
+}
+
+.ToStory {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(40, 40, 40);
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;     
+    max-width: 600px; 
+    z-index: 10000;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+#close-interactive-modal-btn:hover {
+    background: url('../images/NeHochy.jfif') no-repeat center bottom;
+    background-size: 100% 120%; 
+    color: rgba(255, 255, 255, 0);
+    font-weight: 600;
+    padding: 50px 30px;
+}
+

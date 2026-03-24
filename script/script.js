@@ -151,3 +151,20 @@ function showResults() {
 }
 
 document.getElementById('start-similarity-modal-btn').onclick = startTest
+
+
+
+function interacStory() {
+    const interactiveModal = document.getElementById('ToInteractive')
+    interactiveModal.style.display = 'block'
+    mainSection.style.filter = 'blur(5px)'
+    const closeInteractiveModalBtn = document.getElementById('close-interactive-modal-btn')
+    closeInteractiveModalBtn.onclick = () => {
+        interactiveModal.style.display = 'none'
+        mainSection.style.filter = 'none'
+    }
+    const openToStoryBtn = document.getElementById('open-to-story-btn')
+    openToStoryBtn.onclick = () => {
+        window.location.href = "makeStory.html"
+    }
+}

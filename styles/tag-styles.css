@@ -91,3 +91,30 @@ hr{
     background: linear-gradient( var(--green1) 0%, var(--lt_amb) 100%);
     border-radius: 3px;
 }
+
+
+footer{
+    background-color: rgb(10,10,10);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}  
+
+footer p{
+    margin: auto 0;
+}
+footer a{
+    margin: auto 0;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

@@ -15,7 +15,7 @@
                     <a href="#heroSection"><h3>О герое</h3></a>
                     <a href="#heroWorldSection"><h3>О мире</h3></a>
                     <a href="story.html"><h3>История</h3></a>
-                    <a href="#"><h3>Интерактивчик</h3></a>
+                    <a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>
             </header>
             <main> 
                 <div style="text-align: center;">
@@ -113,10 +113,34 @@
                 <div id="story">
                     <h2>История</h2>
                     <p>Ну а теперь история, как же я докатился до жизни такой...</p>
-                    <a href="story.html"><button>Давайте начнем</button></a>
+                    <br>
+                    <a href="story.html"><button class="btn">Давайте начнем</button></a>
                 </div>
             </main>
         </div>
+        <footer>
+            <div class="footer-text">
+                <p>&copy; 2026 Amonik</p>
+                <p>Сделано лучшим программистом в мире</p>
+                <small>Все права защищены. Любое использование материалов сайта без разрешения автора запрещено.</small>
+            </div>
+            <div>
+                <div style="display: flex;gap: 10px;">
+                    <img src="images/icons/Instagram_icon.png" alt="Instagram" width="30px" style="border-radius: 50%;">
+                    <a href="https://instagram.com"><p>Instagram</p></a>
+                </div>
+                <br>
+                <div style="display: flex;gap: 10px;">
+                    <img src="images/icons/Telegram_icon.png" alt="Telegram" width="30px" style="border-radius: 50%;">
+                    <a href="https://t.me"><p>Telegram</p></a>
+                </div>
+                <br>
+                <div style="display: flex;gap: 10px;">
+                    <img src="images/icons/Discord_icon.jpg" alt="GitHub" width="30px" style="border-radius: 50%;">
+                    <a href="https://discord.com"><p>Discord</p></a>
+                </div>
+            </div>
+        </footer>
     </body>
     <div class="similarity-modal-window" id="similarity-modal-window">
         <button class="btn-x-close" id="close-similarity-modal-btn">⨉</button>
@@ -144,6 +168,13 @@
             <br>
             <button class="btn" id="start-similarity-modal-btn">Начать тест</button>
         </div>
+    </div>
+    <div class="ToStory" id="ToInteractive">
+        <h1>Вы готовы перейти к интерактивной истории?</h1>
+        <p>Перед этим нужно прочитать историю</p>
+        <br>
+        <button class="btn" id="close-interactive-modal-btn">Не чето не хочу пока</button>
+        <button class="btn" id="open-to-story-btn">Перейти к истории</button>
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
