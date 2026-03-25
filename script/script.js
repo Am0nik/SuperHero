@@ -168,3 +168,5 @@ function interacStory() {
         window.location.href = "makeStory.html"
     }
 }
+
+

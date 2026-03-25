@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/tag-styles.css">
         <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="https://unpkg.com">
     </head>
     <body>
         <div id="main">
@@ -16,6 +17,7 @@
                     <a href="#heroWorldSection"><h3>О мире</h3></a>
                     <a href="story.html"><h3>История</h3></a>
                     <a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>
+                    <a href="videosAndPhotos.html"><h3>Видео и фото</h3></a>
             </header>
             <main> 
                 <div style="text-align: center;">
@@ -26,19 +28,26 @@
                 </div>
 
                 <div class="container" id="main">
+                    <video autoplay muted loop playsinline class="bg-video">
+                        <source src="video/binary-code.webm" type="video/webm">
+                    </video>
+
+                    <!-- Это чтобы видос к краям затемнялся -->
+                    <div class="video-overlay"></div>
+                
                     <div class="text-container">
                         <h2>Наш герой</h2> 
-                        <p>Прежде чем погрузиться в лор нам нужно познакомиться с нашим героем. 
-                            Даже если он выглядит не очень интересно, он обладает уникальными способностями, 
-                            которые сделают его незаменимым в борьбе за будущее человечества.</p>
+                        <p>Прежде чем погрузиться в лор нам нужно познакомиться с нашим героем...</p>
                         <br>
-                        <button class="btn" id="learn-more-btn-hero" style="width: 40%;">Узнать больше</button>
+                        <button class="btn" id="learn-more-btn-hero">Узнать больше</button>
                     </div>
-                    <img src="images/Hero1.png"  alt="hero" class="model-img" width="20%">
+
+                    <img src="images/Hero1.png" alt="hero" class="model-img" width="20%">
                 </div>
+
                 <br><br>
                 <div id="heroSection">
-                    <div style="display: flex;flex-direction: column;align-items: flex-start;gap: 5px;margin: auto 0;width: 80%;">
+                    <div class="herotext">
                         <h2>О герое</h2>
                         <p>Вот и наш герой, сейчас вы познакомимся с ним подробнее.</p>
                         <br>
@@ -59,7 +68,7 @@
                 <br><hr class="hr2"><br>
                 <div id="heroWorldSection">
                     <h2>Мир, в котором живет Decsim</h2>
-                    <p style="line-height: 2;">Decsim живет в мире, который сильно отличается от нашего. 
+                    <p>Decsim живет в мире, который сильно отличается от нашего. 
                         Это мир, где технологии везде и повсюду, если мы живем с технологиями, то они живут в них. 
                         В этом мире граница между реальностью и цифровой иллюзией давно стерта.
                         Человечество достигло технологии переноса сознания в искусственную среду. 
@@ -77,6 +86,10 @@
                         Те, кто понимает, что происходит, называют это системой обмана — местом, где сознание живёт, но не принадлежит себе.
                         И чем глубже человек погружается в этот мир, тем сложнее отличить правду от иллюзии.
                         </p>
+                        <br>
+                    <div id="custom-map">
+                        <img src="images/worldMap.png" alt="WorldMap">
+                    </div>
                 </div>
                 <br><br>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -119,10 +132,13 @@
             </main>
         </div>
         <footer>
-            <div class="footer-text">
-                <p>&copy; 2026 Amonik</p>
-                <p>Сделано лучшим программистом в мире</p>
-                <small>Все права защищены. Любое использование материалов сайта без разрешения автора запрещено.</small>
+            <div class="footer-main">
+                <div class="footer-text">
+                    <p>&copy; 2026 Amonik</p>
+                    <p>Сделано лучшим программистом в мире</p>
+                    <small>Все права защищены. Любое использование материалов сайта без разрешения автора запрещено.</small>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1774437946338!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ2trdmZZTlE.!2m2!1d22.64745837669998!2d114.0282213726861!3f23.56406719831327!4f8.014844453784349!5f0.7820865974627469" width="30%" height="100%" style="border-color:lawngreen" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div>
                 <div style="display: flex;gap: 10px;">
