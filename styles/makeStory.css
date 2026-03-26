@@ -53,3 +53,32 @@
 #mainstory{
     background:none;
 }
+
+#form-continue {
+    display: none ;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--green3);
+    background: rgb(20, 20, 20);
+}
+
+#form-continue form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+#form-continue input[type="text"], 
+#form-continue input[type="email"] {
+    padding: 8px;
+    background: #000000;
+    border: 1px solid  var(--amber);
+    color: var(--apple_llc);
+}

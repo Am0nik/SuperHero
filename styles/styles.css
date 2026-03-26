@@ -353,6 +353,7 @@
     }
     #main{
         display: block;
+        padding: 0px;
     }
     #main img{
         width: 70%;
@@ -375,7 +376,7 @@
     }
     #custom-map{
         height: auto;
-        margin: auto 0 ;
+        margin: 0 auto;
         width: 90%;
     }
     #custom-map img{
@@ -404,8 +405,19 @@
     .btn-grid{
         justify-items: center;
     }
+    #carouselExampleIndicators{
+        width: 90%;
+    }
+    .text-continer p{
+        text-align: justify;
+    }
+    #story{
+        text-align: center;
+    }
+    #story-main p{
+        text-align: justify;
+    }
 }
-
 @media (400px <= width <= 600){
     .similarity-modal-window{
         width: 90%;
@@ -419,4 +431,47 @@
     .answer-btn .btn{
         width: 80%;
     }
+}
+
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.burger-btn span {
+    width: 30px;
+    height: 3px;
+    background: var(--amber);
+    transition: 0.3s;
+}
+
+@media (max-width: 500px) {
+    .burger-btn {
+        display: flex;
+        z-index: 10000;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 250px;
+        height: 100vh;
+        background: rgb(15, 15, 15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: 0.4s ease-in-out;
+        border-left: 2px solid var(--green2);
+        z-index: 10000;
+    }
+    #menu-toggle:checked ~ .nav-links {
+        right: 0;
+    }
+    #menu-toggle:checked ~ .burger-btn span:nth-child(1) { transform: rotate(45deg) translate(6px, 5px); }
+    #menu-toggle:checked ~ .burger-btn span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked ~ .burger-btn span:nth-child(3) { transform: rotate(-45deg) translate(6px, -5px); }
 }

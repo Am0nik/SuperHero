@@ -12,12 +12,20 @@
     <body>
         <div>
             <header>
-                <a href="index.html"><h3>Главная</h3></a>
-                <a href="index.html#heroSection"><h3>О герое</h3></a>
-                <a href="index.html#heroWorldSection"><h3>О мире</h3></a>
-                <a href="story.html"><h3>История</h3></a>
-                <a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>
-                <a href="videosAndPhotos.html"><h3>Видео и фото</h3></a>
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav-links">
+                    <a href="index.html#main"><h3>Главная</h3></a>
+                    <a href="index.html#heroSection"><h3>О герое</h3></a>
+                    <a href="index.html#heroWorldSection"><h3>О мире</h3></a>
+                    <a href="story.html"><h3>История</h3></a>
+                    <!--<a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>-->
+                    <a href="videosAndPhotos.html"><h3>Видео и фото</h3></a>
+                </nav>
             </header>
             <main id="mainstory"> 
                 <div id="story">
@@ -30,6 +38,26 @@
                             <button id="btn-right" class="story-btn" style="display: none;"></button>
                         </div>
                         <br>
+                        <div id="form-continue">
+                            <form>
+                                <h3>Хотите продолжение или предложить идею?</h3>
+                                <p>Пишите нам</p>
+                                <hr>
+                                <label>Имя / Псевдоним</label>
+                                <input type="text" placeholder="Айбек">
+
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox"> Идея</label>
+                                    <label><input type="checkbox"> Продолжение</label>
+                                </div>
+
+                                <label>Почта для связи</label>
+                                <input type="email" placeholder="example993@gmail.com">
+
+                                <button type="submit" class="story-btn">Отправить</button>
+                            </form>
+                        </div>
+
                     </div>
 
                 </div>
@@ -67,7 +95,7 @@
         <p>Перед этим нужно прочитать историю</p>
         <br>
         <button class="btn" id="close-interactive-modal-btn">Не чето не хочу пока</button>
-        <button class="btn">Перейти к истории</button>
+        <button class="btn" id="open-to-story-btn">Перейти к истории</button>
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>

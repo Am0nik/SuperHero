@@ -134,18 +134,20 @@ const story = {
 
 function Story(stepId) {
     const step = story[stepId]
-    document.getElementById('story-text').innerText = step.text
     const btnLeft = document.getElementById('btn-left')
     const btnRight = document.getElementById('btn-right')
+    const bg = document.getElementById('mainstory')
+    const form = document.getElementById('form-continue')
+    document.getElementById('story-text').innerText = step.text
     btnLeft.style.display = "none"
     btnRight.style.display = "none"
-    const bg = document.getElementById('mainstory')
     bg.style.background = `url(images/finalls/${step.pictures}) no-repeat center/cover`
 
 
     if (step.end){
         const endText = document.getElementById('end')
         endText.style.display = 'block'
+        form.style.display = 'block'
         endText.innerText = step.end
         document.getElementById('btn-left').style.display = 'none';
         document.getElementById('btn-right').style.display = 'none';

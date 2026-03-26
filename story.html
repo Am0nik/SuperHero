@@ -11,14 +11,22 @@
     <body>
         <div id="main">
             <header>
-                    <a href="index.html"><h3>Главная</h3></a>
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav-links">
+                    <a href="index.html#main"><h3>Главная</h3></a>
                     <a href="index.html#heroSection"><h3>О герое</h3></a>
                     <a href="index.html#heroWorldSection"><h3>О мире</h3></a>
                     <a href="story.html"><h3>История</h3></a>
                     <a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>
                     <a href="videosAndPhotos.html"><h3>Видео и фото</h3></a>
+                </nav>
             </header>
-            <main> 
+            <main id="story-main"> 
                 <h1 style="text-align: center;">История</h1>
                 <hr>
                 <br>
@@ -108,7 +116,7 @@
                             Имаго позволял не просто вытащить сознание, а <b><u style="color: #FFCC00;">перезаписать</u></b> его обратно в тело… или в любое другое тело подключённое к сети.</p>
                 </div>
                 <br><br>
-                <div class="continer" style="background-color: unset;">
+                <div class="continer" style="background-color: unset;@media (width <= 600px){text-align: center;}">
                     <h3>Глава 4: <u>Операция «Личинка»</u></h3>
                     <br>
                     <p>Дэксим как и до этого проник в систему, но в этот раз встретил девушку по имени Ая. Она была перенесена в цировой мир только недавно, всего 3 дня назад.

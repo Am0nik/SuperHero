@@ -9,14 +9,22 @@
         <link rel="stylesheet" href="styles/bootstrap.css">
     </head>
     <body>
-        <div>
+        <div id="main">
             <header>
-                <a href="index.html"><h3>Главная</h3></a>
-                <a href="index.html#heroSection"><h3>О герое</h3></a>
-                <a href="index.html#heroWorldSection"><h3>О мире</h3></a>
-                <a href="story.html"><h3>История</h3></a>
-                <a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>
-                <a href="videosAndPhotos.html"><h3>Видео и фото</h3></a>
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav-links">
+                    <a href="index.html#main"><h3>Главная</h3></a>
+                    <a href="index.html#heroSection"><h3>О герое</h3></a>
+                    <a href="index.html#heroWorldSection"><h3>О мире</h3></a>
+                    <a href="story.html"><h3>История</h3></a>
+                    <a href="#" onclick="interacStory()"><h3>Интерактивчик</h3></a>
+                    <a href="videosAndPhotos.html"><h3>Видео и фото</h3></a>
+                </nav>
             </header>
             <main> 
                 <iframe id="video-d" src="https://www.youtube.com/embed/HRVTo8RlNPA?si=u6OaEqUt4yxlx2jD&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -70,6 +78,9 @@
                         <span class="visually-hidden">Вперед</span>
                     </button>
                 </div>
+                <div>
+                    <video src="video/SuperHero.mp4" style="width: 60%;" autoplay loop controls ></video>
+                </div>
             </main>
         </div>
         <footer>
@@ -104,7 +115,7 @@
         <p>Перед этим нужно прочитать историю</p>
         <br>
         <button class="btn" id="close-interactive-modal-btn">Не чето не хочу пока</button>
-        <button class="btn">Перейти к истории</button>
+        <button class="btn" id="open-to-story-btn">Перейти к истории</button>
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
