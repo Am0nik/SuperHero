@@ -67,6 +67,8 @@ const questions = [
 ]//Вопросы для теста
 
 
+
+
 const el = document.querySelector('.typing');
 const length = el.textContent.length; 
 el.style.animationTimingFunction = `steps(${length}, end)`;

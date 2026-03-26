@@ -275,14 +275,16 @@
 }
 
 
-.herotext{
+.herotext {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-    margin:0 auto;
+    margin: 0 auto;
     width: 80%;
 }
+
+
 #heroWorldSection p{
     line-height: 2;
 }
